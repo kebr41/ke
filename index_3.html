@@ -494,3 +494,21 @@
 
   document.querySelectorAll(
     '.cert-item, .activity-item, .skil
+# replace placeholders
+GITHUB_USER="YOUR_GITHUB_USERNAME"
+REPO="keportfolio"   # or YOUR_REPO
+DOMAIN="www.mykeportfolio.com"  # or keportfolio.yourdomain.com
+
+# initialize and push
+git init
+git add .
+git commit -m "Initial site upload"
+git branch -M main
+git remote add origin https://github.com/$GITHUB_USER/$REPO.git
+git push -u origin main
+
+# add CNAME file (if you didn't create it already)
+echo "$DOMAIN" > CNAME
+git add CNAME
+git commit -m "Add CNAME for custom domain"
+git push
