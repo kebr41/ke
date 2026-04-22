@@ -2,7 +2,7 @@
 git init
 git remote add origin https://github.com/YOUR_GITHUB_USERNAME/keportfolio.git
 # add your site files (index.html etc.)
-echo "keportfolio.yourdomain.com" > CNAME
+echo "www.mykeportfolio.com" > CNAME
 git add .
 git commit -m "Initial site + CNAME"
 git branch -M main
