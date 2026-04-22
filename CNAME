@@ -1,9 +1,2 @@
-# create repo locally and push (replace USERNAME and EMAIL)
-git init
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/keportfolio.git
-# add your site files (index.html etc.)
-echo "www.mykeportfolio.com" > CNAME
-git add .
-git commit -m "Initial site + CNAME"
-git branch -M main
-git push -u origin main
+www.mykeportfolio.com
+
